@@ -230,7 +230,7 @@ max-height: 90vh;
 
 @media (max-width: 800px) {
   .modal-content {
-    max-width: 400px;
-    max-height: 250px;
+    max-width: 90vw;
+    max-height: auto;
   }
 }
