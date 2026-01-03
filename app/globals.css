@@ -233,5 +233,7 @@ max-height: 90vh;
   rotate: 90deg;
   padding: 100px 0;
   width: 100vw;
+  height: 100vh;
+  padding: 160px 0;
  }
 }
