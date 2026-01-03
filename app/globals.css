@@ -225,12 +225,11 @@ z-index: 999;
 
 .modal-content {
 max-width: 90vw;
-max-height: auto;
+max-height: 90vh;
 }
 
 @media (max-width: 800px) {
-  .modal-content {
-    max-width: 90vw;
-    max-height: auto;
-  }
+ .modal-content{
+  height: 300px;
+ }
 }

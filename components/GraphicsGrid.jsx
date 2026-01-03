@@ -45,7 +45,7 @@ onClick={() => setModal(img)}
 </div>
 
 {modal && (
-<div className="modal" onClick={() => setModal(null)}>
+<div className="modal graphics" onClick={() => setModal(null)}>
 <Image src={modal} alt="Preview" width={1200} height={800} className="modal-content" />
 </div>
 )}
