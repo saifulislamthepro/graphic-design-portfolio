@@ -230,6 +230,8 @@ max-height: 90vh;
 
 @media (max-width: 800px) {
  .modal-content{
-  height: 300px;
+  rotate: 90deg;
+  padding: 100px 0;
+  width: 100vw;
  }
 }
