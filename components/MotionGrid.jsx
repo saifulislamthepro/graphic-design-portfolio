@@ -2,7 +2,7 @@
 "use client";
 
 
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import useReveal from "@/hooks/useReveal";
 
 
@@ -22,7 +22,7 @@ const motions = [
 
 export default function MotionGrid() {
 const [video, setVideo] = useState(null);
-
+const [ref, visible] = useReveal();
 
 
 return(
@@ -30,7 +30,8 @@ return(
 <h2>Motion Graphics</h2>
 <div className="grid">
 {motions.map((item, i) => {
-const [ref, visible] = useReveal();
+
+
 return (
 <div
 key={i}

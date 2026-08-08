@@ -2,7 +2,7 @@
 "use client";
 
 
-import { useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import Image from "next/image";
 import useReveal from "@/hooks/useReveal";
 
@@ -22,7 +22,9 @@ const graphics = [
 
 
 export default function GraphicsGrid() {
+const [ref, visible] = useReveal();
 const [modal, setModal] = useState(null);
+
 
 
 return (
@@ -30,7 +32,6 @@ return (
 <h2>Graphic Design</h2>
 <div className="grid">
 {graphics.map((img, i) => {
-const [ref, visible] = useReveal();
 return (
 <div
 key={i}
